@@ -7,7 +7,7 @@ from sklearn import tree
 # load save model  
 model = pickle.load((open('fetal_model.sav', 'rb')))
 
-st.image("header.jpg")
+st.image("header.png")
 # judul web
 st.title('Prediksi Kesehatan Janin')
 
