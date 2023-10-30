@@ -156,6 +156,7 @@ Selanjutnya, saya perlu mengetahui informasi mengenai statistik deskriptif dari 
 ```
 df.describe()
 ```
+![](./Assets/info.png)
 
 Menampilkan matriks korelasi untuk mengetahui sejauh mana kolom-kolom dalam dataframe berhubungan satu sama lain.
 ```
@@ -249,6 +250,8 @@ else:
 ```
 
 **Visualisasi Pohon Keputusan**
+
+![](./Assets/decision_tree.png)
 
 Sebelum menyelesaikan tahap modeling, tentu saja, saya perlu menyimpan model mesin yang telah dilatih sebagai file dengan ekstensi .sav. Hal ini bertujuan untuk pengembangan dalam aplikasi streamlit nya.
 ```
