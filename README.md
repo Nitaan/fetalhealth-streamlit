@@ -42,8 +42,11 @@ Bagian laporan ini mencakup:
 
 ### Goals
 
-Mengembangkan model klasifikasi yang memiliki tingkat akurasi yang tinggi dalam mengidentifikasi masalah kesehatan janin berdasarkan cardiotocography (CTG), 
-sehingga dapat memberikan peringatan dini dan tindakan yang tepat.
+Membuat sistem informasi yang menggunakan model Decision Tree Classifier yang memiliki tingkat akurasi yang tinggi dalam mengidentifikasi masalah kesehatan janin berdasarkan cardiotocography (CTG), sehingga dapat memberikan peringatan dini dan tindakan yang tepat.
+
+### Solution statements
+
+Mengembangkan model machine learning berbasis decision tree yang dapat mengklasifikasikan kesehatan janin menjadi kategori normal, suspect, dan pathologic berdasarkan data CTG yang dikumpulkan. Model ini akan dirancang untuk akurasi dan keandalan tinggi.
 
 
 ## Data Understanding
