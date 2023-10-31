@@ -88,11 +88,8 @@ Berikut informasi pada dataset:
 21. **Histogram Tendency (Kemiringan Histogram):** Indikasi arah atau kecenderungan dari distribusi frekuensi dalam histogram detak jantung janin. [float64] <br>
 22. **Fetal Health (Kesehatan Janin):**  Mengacu pada kondisi kesehatan janin selama masa kehamilan. Dikategorikan menjadi normal, suspect, Pathologic. [float64] <br>
 
-
-## Data Preparation
-
-Untuk tahap Data Preparation, saya menggunakan Teknik Exploratory Data Analysis (EDA) dan Visual Data Analysis (VDA).
-Proses EDA dan VDA dilakukan dengan menganalisis dataset untuk mendapatkan pemahaman yang utuh terkait dengan dataset guna mendapatkan insight & knowledge.
+Dalam data understanding, Saya melakukan Teknik **Exploratory Data Analysis (EDA)** dan **Visual Data Analysis (VDA)**. 
+Proses EDA dan VDA dilakukan dengan menganalisis dataset untuk mendapatkan pemahaman yang utuh mengenai dataset guna mendapatkan insight & knowledge.
 
 Tahapan EDA dan VDA yang saya lakukan antara lain:
 
@@ -174,11 +171,9 @@ sns.heatmap(df.corr(), annot=True)
 
 Gambar tersebut memberikan informasi bahwa terdapat 78% pasien normal, 14% pasien suspect, dan 8% pasien pathological.
 
+## Data Preparation
 
-## Modeling
-Pada Tahap Modeling saya menggunakan model DecisionTreeClassifier dari library sklearn. 
-Decision Tree Classifier adalah salah satu algoritma pembelajaran mesin yang digunakan untuk tugas klasifikasi. Ini adalah model prediksi yang mengambil keputusan berdasarkan aturan yang ditemukan dari data pelatihan. Model ini membentuk struktur pohon yang menggambarkan serangkaian keputusan yang harus diambil berdasarkan fitur-fitur data masukan, dan akhirnya memprediksi kelas atau label keluaran.
-Tahap awal yang saya lakukan adalah sebagai berikut:
+Untuk tahap Data Preparation, Tahap awal yang saya lakukan adalah sebagai berikut:
 
 **Mengidentifikasi variabel independen dan dependen.**
 ```
@@ -206,8 +201,13 @@ scaler = StandardScaler()
 x_train = scaler.fit_transform(x_train)
 x_test = scaler.transform(x_test)
 ```
-dengan menggunakan fungsi StandardScaler, dilakukan penskalaan data dalam dataframe. Proses ini penting sehingga setiap fitur memiliki skala yang serupa atau setara
+dengan menggunakan fungsi StandardScaler, dilakukan penskalaan data dalam dataframe. Proses ini penting sehingga setiap fitur memiliki skala yang serupa atau setara.
 
+## Modeling
+Pada Tahap Modeling saya menggunakan model DecisionTreeClassifier dari library sklearn. 
+Decision Tree Classifier adalah salah satu algoritma pembelajaran mesin yang digunakan untuk tugas klasifikasi. Ini adalah model prediksi yang mengambil keputusan berdasarkan aturan yang ditemukan dari data pelatihan. Model ini membentuk struktur pohon yang menggambarkan serangkaian keputusan yang harus diambil berdasarkan fitur-fitur data masukan, dan akhirnya memprediksi kelas atau label keluaran.
+
+Tahap awal yang saya lakukan adalah sebagai berikut:
 
 **Import Library Sklearn untuk pembuatan Model Decision Tree Classifier dan Melalukan Pengukuran Akurasi**
 ```
