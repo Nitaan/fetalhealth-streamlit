@@ -14,7 +14,7 @@ st.title('Klasifikasi Kesehatan Janin')
 col1, col2, col3 = st.columns(3)
     
 with col1:
-    baseline_value = st.slider('Input Garis dasar detak jantung janin (denyut per menit)', value=120.0, 110, 160)
+    baseline_value = st.slider('Input Garis dasar detak jantung janin (denyut per menit)', 110, 160, value=120.0, )
 with col1:
     accelerations = st.number_input('Input Jumlah percepatan per detik', value=0.0, step=0.001, format="%0.3f")	
 with col1:
