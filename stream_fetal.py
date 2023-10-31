@@ -9,12 +9,12 @@ model = pickle.load((open('fetal_model.sav', 'rb')))
 
 st.image("header.png")
 # judul web
-st.title('Prediksi Kesehatan Janin')
+st.title('Klasifikasi Kesehatan Janin')
 
 col1, col2, col3 = st.columns(3)
     
 with col1:
-    baseline_value = st.number_input ('Input Garis dasar detak jantung janin (denyut per menit)', value=120.0, step=0.001, format="%0.3f")
+    baseline_value = st.slider ('Input Garis dasar detak jantung janin (denyut per menit)', value=120.0, 110, 160)
 with col1:
     accelerations = st.number_input ('Input Jumlah percepatan per detik', value=0.0, step=0.001, format="%0.3f")	
 with col1:
@@ -28,11 +28,13 @@ with col1:
 with col1:
     prolongued_decelerations = st.number_input ('Input Jumlah perlambatan berkepanjangan per detik', value=0.0, step=0.001, format="%0.3f")
 with col2:
-    abnormal_short_term_variability	= st.number_input ('Input Persentase waktu dengan variabilitas jangka pendek yang abnormal', value=73.0, step=0.001, format="%0.3f")
+    abnormal_short_term_variability	= st.slider ('Input Persentase waktu dengan variabilitas jangka pendek yang abnormal', min_value=0,
+    max_value=100, value=73.0, step=0.001,  format="%d%%")
 with col2:
     mean_value_of_short_term_variability = st.number_input ('Input Nilai rata-rata variabilitas jangka pendek', value=0.5, step=0.001, format="%0.3f")
 with col2:
-    percentage_of_time_with_abnormal_long_term_variability = st.number_input ('Input Persentase waktu dengan variabilitas jangka panjang yang abnormal', value=43.0, step=0.001, format="%0.3f")
+    percentage_of_time_with_abnormal_long_term_variability = st.number_input ('Input Persentase waktu dengan variabilitas jangka panjang yang abnormal', min_value=0,
+    max_value=100, value=43.0, step=0.001,  format="%d%%")
 with col2:
     mean_value_of_long_term_variability = st.number_input ('Input Nilai rata-rata variabilitas jangka panjang', value=2.4, step=0.001, format="%0.3f")
 with col2:
