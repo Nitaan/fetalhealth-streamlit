@@ -65,28 +65,28 @@ Berikut informasi pada dataset:
 
 ### Variabel-variabel pada Fetal Health Classification Dataset adalah sebagai berikut:
 
-1. Baseline Value (Nilai Dasar): Jumlah detak jantung janin diukur dalam denyut per menit saat berada dalam keadaan stabil atau baseline. [float64] (Min: 110, Max: 160)
-2. Accelerations (Akselerasi): Jumlah detak jantung janin mengalami peningkatan dalam satu detik. [float64]
-3. Fetal Movement (Gerakan Janin): Jumlah gerakan atau pergerakan janin dalam satu detik. [float64]
-4. Uterine Contractions (Kontraksi Rahim): Jumlah kontraksi atau kontraksi rahim dalam satu detik.
-5. Light Decelerations (Pembelahan Ringan): Jumlah pembelahan atau penurunan detak jantung janin dengan intensitas ringan dalam satu detik. [float64]
-6. Severe Decelerations (Pembelahan Parah): Jumlah pembelahan atau penurunan detak jantung janin dengan intensitas parah dalam satu detik. [float64]
-7. Prolonged Decelerations (Pembelahan Prolonged): Jumlah pembelahan atau penurunan detak jantung janin yang berlangsung lama dalam satu detik. [float64]
-8. Abnormal Short-Term Variability (Variabilitas Pendek Abnormal): Persentase waktu ketika variasi detak jantung janin dalam jangka pendek dianggap tidak normal. [float64] (Min: 0, Max: 100)
-9. Mean Value of Short-Term Variability (Rata-rata Variabilitas Pendek Jangka): Nilai rata-rata dari variasi detak jantung janin dalam jangka pendek. [float64]
-10. Percentage of Time with Abnormal Long-Term Variability (Persentase Waktu dengan Variabilitas Jangka Panjang Abnormal): Persentase waktu ketika variasi detak jantung janin dalam jangka panjang dianggap tidak normal. [float64] (Min: 0, Max: 100)
-11. Mean Value of Long-Term Variability (Rata-rata Variabilitas Jangka Panjang): Nilai rata-rata dari variasi detak jantung janin dalam jangka panjang. [float64]
-12. Histogram Width (Lebar Histogram): Ukuran lebar distribusi frekuensi detak jantung janin. [float64]
-13. Histogram Min (Minimum Histogram): Nilai terendah atau frekuensi rendah dalam histogram detak jantung janin. [float64]
-14. Histogram Max (Maksimum Histogram): Nilai tertinggi atau frekuensi tinggi dalam histogram detak jantung janin. [float64]
-15. Histogram Number of Peaks (Jumlah Puncak Histogram): Jumlah puncak atau titik tertinggi dalam histogram detak jantung janin. [float64]
-16. Histogram Number of Zeroes (Jumlah Nol Histogram): Jumlah nol atau titik terendah dalam histogram detak jantung janin. [float64]
-17. Histogram Mode (Modus Histogram): Nilai yang muncul paling sering dalam histogram detak jantung janin. [float64]
-18. Histogram Mean (Rata-rata Histogram): Nilai rata-rata dari semua nilai dalam histogram detak jantung janin. [float64]
-19. Histogram Median (Median Histogram): Nilai tengah dalam urutan nilai dalam histogram detak jantung janin. [float64]
-20. Histogram Variance (Variansi Histogram): Ukuran sebaran atau variasi antara nilai-nilai dalam histogram detak jantung janin. [float64]
-21. Histogram Tendency (Kemiringan Histogram): Indikasi arah atau kecenderungan dari distribusi frekuensi dalam histogram detak jantung janin. [float64]
-22. Fetal Health (Kesehatan Janin):  Mengacu pada kondisi kesehatan janin selama masa kehamilan. Dikategorikan menjadi normal, suspect, Pathologic. [float64]
+1. **Baseline Value (Nilai Dasar):** Jumlah detak jantung janin diukur dalam denyut per menit saat berada dalam keadaan stabil atau baseline. [float64] (Min: 110, Max: 160) <br>
+2. **Accelerations (Akselerasi):** Jumlah detak jantung janin mengalami peningkatan dalam satu detik. [float64] <br>
+3. **Fetal Movement (Gerakan Janin):** Jumlah gerakan atau pergerakan janin dalam satu detik. [float64] <br>
+4. **Uterine Contractions (Kontraksi Rahim):** Jumlah kontraksi atau kontraksi rahim dalam satu detik. <br>
+5. **Light Decelerations (Pembelahan Ringan):** Jumlah pembelahan atau penurunan detak jantung janin dengan intensitas ringan dalam satu detik. [float64] <br>
+6. **Severe Decelerations (Pembelahan Parah):** Jumlah pembelahan atau penurunan detak jantung janin dengan intensitas parah dalam satu detik. [float64] <br>
+7. **Prolonged Decelerations (Pembelahan Prolonged):** Jumlah pembelahan atau penurunan detak jantung janin yang berlangsung lama dalam satu detik. [float64] <br>
+8. **Abnormal Short-Term Variability (Variabilitas Pendek Abnormal):** Persentase waktu ketika variasi detak jantung janin dalam jangka pendek dianggap tidak normal. [float64] (Min: 0, Max: 100) <br>
+9. **Mean Value of Short-Term Variability (Rata-rata Variabilitas Pendek Jangka):** Nilai rata-rata dari variasi detak jantung janin dalam jangka pendek. [float64] <br>
+10. **Percentage of Time with Abnormal Long-Term Variability (Persentase Waktu dengan Variabilitas Jangka Panjang Abnormal):** Persentase waktu ketika variasi detak jantung janin dalam jangka panjang dianggap tidak normal. [float64] (Min: 0, Max: 100) <br>
+11. **Mean Value of Long-Term Variability (Rata-rata Variabilitas Jangka Panjang):** Nilai rata-rata dari variasi detak jantung janin dalam jangka panjang. [float64] <br>
+12. **Histogram Width (Lebar Histogram):** Ukuran lebar distribusi frekuensi detak jantung janin. [float64] <br>
+13. **Histogram Min (Minimum Histogram):** Nilai terendah atau frekuensi rendah dalam histogram detak jantung janin. [float64] <br>
+14. **Histogram Max (Maksimum Histogram):** Nilai tertinggi atau frekuensi tinggi dalam histogram detak jantung janin. [float64] <br>
+15. **Histogram Number of Peaks (Jumlah Puncak Histogram):** Jumlah puncak atau titik tertinggi dalam histogram detak jantung janin. [float64] <br>
+16. **Histogram Number of Zeroes (Jumlah Nol Histogram):** Jumlah nol atau titik terendah dalam histogram detak jantung janin. [float64] <br>
+17. **Histogram Mode (Modus Histogram):** Nilai yang muncul paling sering dalam histogram detak jantung janin. [float64] <br>
+18. **Histogram Mean (Rata-rata Histogram):** Nilai rata-rata dari semua nilai dalam histogram detak jantung janin. [float64] <br>
+19. **Histogram Median (Median Histogram):** Nilai tengah dalam urutan nilai dalam histogram detak jantung janin. [float64] <br>
+20. **Histogram Variance (Variansi Histogram):** Ukuran sebaran atau variasi antara nilai-nilai dalam histogram detak jantung janin. [float64] <br>
+21. **Histogram Tendency (Kemiringan Histogram):** Indikasi arah atau kecenderungan dari distribusi frekuensi dalam histogram detak jantung janin. [float64] <br>
+22. **Fetal Health (Kesehatan Janin):**  Mengacu pada kondisi kesehatan janin selama masa kehamilan. Dikategorikan menjadi normal, suspect, Pathologic. [float64] <br>
 
 
 ## Data Preparation
