@@ -20,7 +20,7 @@
 
 ## Domain Proyek
 
-Proyek Prediksi Kesehatan Janin ini bertujuan untuk memberikan peringatan dini terhadap potensi masalah kesehatan janin dengan menggunakan data dari 
+Proyek Klasifikasi Kesehatan Janin ini bertujuan untuk memberikan peringatan dini terhadap potensi masalah kesehatan janin dengan menggunakan data dari 
 pemeriksaan cardiotocography (CTG) dan memberikan bantuan kepada tenaga medis dalam pengambilan keputusan yang lebih tepat terkait perawatan ibu dan janin selama kehamilan. 
 Dalam hal ini kesehatan janin di klasifikasikan dalam 3 kategori yaitu:
 - Normal : Mengindikasikan bahwa sesuatu berada dalam rentang atau kondisi yang dianggap normal, sehat, atau tidak ada tanda-tanda masalah atau penyakit.
@@ -302,6 +302,7 @@ Kode tersebut menunjukan hasil sebagai berikut:
 ## Deployment
 
 ![Klasifikasi Kesehatan Janin](./Assets/fetal-app.png)
-[Prediksi Kesehatan Janin](https://fetal-health-app-nita27.streamlit.app/)
+
+[Aplikasi Klasifikasi Kesehatan Janin](https://fetal-health-app-nita27.streamlit.app/)
 
 
