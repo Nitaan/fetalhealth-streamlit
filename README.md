@@ -65,16 +65,16 @@ Berikut informasi pada dataset:
 
 ### Variabel-variabel pada Fetal Health Classification Dataset adalah sebagai berikut:
 
-1. Baseline Value (Nilai Dasar): Jumlah detak jantung janin diukur dalam denyut per menit saat berada dalam keadaan stabil atau baseline. [float64]
+1. Baseline Value (Nilai Dasar): Jumlah detak jantung janin diukur dalam denyut per menit saat berada dalam keadaan stabil atau baseline. [float64] (Min: 110, Max: 160)
 2. Accelerations (Akselerasi): Jumlah detak jantung janin mengalami peningkatan dalam satu detik. [float64]
 3. Fetal Movement (Gerakan Janin): Jumlah gerakan atau pergerakan janin dalam satu detik. [float64]
 4. Uterine Contractions (Kontraksi Rahim): Jumlah kontraksi atau kontraksi rahim dalam satu detik.
 5. Light Decelerations (Pembelahan Ringan): Jumlah pembelahan atau penurunan detak jantung janin dengan intensitas ringan dalam satu detik. [float64]
 6. Severe Decelerations (Pembelahan Parah): Jumlah pembelahan atau penurunan detak jantung janin dengan intensitas parah dalam satu detik. [float64]
 7. Prolonged Decelerations (Pembelahan Prolonged): Jumlah pembelahan atau penurunan detak jantung janin yang berlangsung lama dalam satu detik. [float64]
-8. Abnormal Short-Term Variability (Variabilitas Pendek Abnormal): Persentase waktu ketika variasi detak jantung janin dalam jangka pendek dianggap tidak normal. [float64]
+8. Abnormal Short-Term Variability (Variabilitas Pendek Abnormal): Persentase waktu ketika variasi detak jantung janin dalam jangka pendek dianggap tidak normal. [float64] (Min: 0, Max: 100)
 9. Mean Value of Short-Term Variability (Rata-rata Variabilitas Pendek Jangka): Nilai rata-rata dari variasi detak jantung janin dalam jangka pendek. [float64]
-10. Percentage of Time with Abnormal Long-Term Variability (Persentase Waktu dengan Variabilitas Jangka Panjang Abnormal): Persentase waktu ketika variasi detak jantung janin dalam jangka panjang dianggap tidak normal. [float64]
+10. Percentage of Time with Abnormal Long-Term Variability (Persentase Waktu dengan Variabilitas Jangka Panjang Abnormal): Persentase waktu ketika variasi detak jantung janin dalam jangka panjang dianggap tidak normal. [float64] (Min: 0, Max: 100)
 11. Mean Value of Long-Term Variability (Rata-rata Variabilitas Jangka Panjang): Nilai rata-rata dari variasi detak jantung janin dalam jangka panjang. [float64]
 12. Histogram Width (Lebar Histogram): Ukuran lebar distribusi frekuensi detak jantung janin. [float64]
 13. Histogram Min (Minimum Histogram): Nilai terendah atau frekuensi rendah dalam histogram detak jantung janin. [float64]
@@ -231,7 +231,7 @@ print(f"Akurasi Data Testing = {dtc_acc} \n")
 ![](./Assets/accuracy.png)
 dari output yang ada, akurasi dari training mencapai nilai 92% dan akurasi data testing sebanyak 90%. 
 
-Saya Mencoba pengetesan menggunakan data yang ada dalam file .csv untuk memeriksa apakah hasilnya sesuai atau tidak. 
+Saya Mencoba pengetesan menggunakan data yang ada dumy untuk memeriksa apakah outputnya bisa muncul atau tidak.
 ```input_data = (122.0,0.0,0.0,0.003,0.0,0.0,0.0,86.0,0.3,6.0,10.6,68.0,62.0,130.0,1.0,0.0,122.0,122.0,123.0,1.0,1.0)
 
 input_data_as_numpy_array = np.array(input_data)
@@ -297,6 +297,26 @@ print(f"classification Report: \n {classification_report(y_test, dtc.predict(x_t
 Kode tersebut menunjukan hasil sebagai berikut: 
 ![](./Assets/conf.png)
 ![](./Assets/class.png)
+
+Dari Hasil Classification Report yang disajikan, kita mendapatkan sejumlah metrik evaluasi yang berguna menilai kinerja model klasifikasi pada tiga kelas atau pada label yang berbeda (1.0, 2.0, 3.0). Berikut penjelasan lebih lanjut mengenai classification report: 
+
+1. Precision: Ini adalah tingkat keakuratan prediksi positif. Precision mengukur seberapa banyak dari prediksi positif yang benar. Dalam kasus ini:
+   
+- Untuk kelas 1.0, presisi adalah 0.92, yang berarti sekitar 92% dari prediksi kelas 1.0 benar.
+- Untuk kelas 2.0, presisi adalah 0.73, yang berarti sekitar 73% dari prediksi kelas 2.0 benar.
+- Untuk kelas 3.0, presisi adalah 0.95, yang berarti sekitar 95% dari prediksi kelas 3.0 benar.
+
+2. Recall (Sensitivitas): Recall mengukur seberapa banyak dari instance positif yang berhasil ditemukan oleh model. Dalam kasus ini:
+   
+- Untuk kelas 1.0, recall adalah 0.96, yang berarti model dapat menemukan sekitar 96% dari instance yang sebenarnya kelas 1.0.
+- Untuk kelas 2.0, recall adalah 0.62, yang berarti model dapat menemukan sekitar 62% dari instance yang sebenarnya kelas 2.0.
+- Untuk kelas 3.0, recall adalah 0.83, yang berarti model dapat menemukan sekitar 83% dari instance yang sebenarnya kelas 3.0.
+
+3. F1-Score: F1-score adalah pengukuran gabungan dari presisi dan recall. Ini memberikan bobot yang seimbang antara kedua metrik tersebut dan berguna ketika ada trade-off antara presisi dan recall. Dalam kasus ini, F1-score dihitung untuk setiap kelas.
+
+4. Support: Support adalah jumlah instance dalam setiap kelas, memberikan konteks tentang seberapa besar kelas tersebut dalam data uji. Misalnya, kelas 1.0 memiliki dukungan sejumlah 326 instance dan seterusnya.
+
+5. Accuracy: Akurasi adalah sejauh mana model secara keseluruhan memprediksi dengan benar untuk semua kelas. Dalam kasus ini, akurasi adalah sekitar 90%, yang berarti sekitar 90% dari semua prediksi benar.
 
 
 ## Deployment
