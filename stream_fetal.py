@@ -29,12 +29,12 @@ with col1:
     prolongued_decelerations = st.number_input('Input Jumlah perlambatan berkepanjangan per detik', value=0.0, step=0.001, format="%0.3f")
 with col2:
     abnormal_short_term_variability	= st.slider('Input Persentase waktu dengan variabilitas jangka pendek yang abnormal', min_value=0.0,
-    max_value=100.0, value=73.0, step=0.001,  format="%d%%")
+    max_value=100.0, value=73.0, step=0.001,  format="{:.2f%}")
 with col2:
     mean_value_of_short_term_variability = st.number_input('Input Nilai rata-rata variabilitas jangka pendek', value=0.5, step=0.001, format="%0.3f")
 with col2:
     percentage_of_time_with_abnormal_long_term_variability = st.number_input('Input Persentase waktu dengan variabilitas jangka panjang yang abnormal', min_value=0.0,
-    max_value=100.0, value=43.0, step=0.001,  format="%d%%")
+    max_value=100.0, value=43.0, step=0.001,  format="%.2f")
 with col2:
     mean_value_of_long_term_variability = st.number_input('Input Nilai rata-rata variabilitas jangka panjang', value=2.4, step=0.001, format="%0.3f")
 with col2:
