@@ -166,10 +166,12 @@ sns.heatmap(df.corr(), annot=True)
 ![](./Assets/corr.png)
 
 **Visualisasi Data**
-1.
+
+1. Visualisasi Distribusi data menggunakan histogram
 ![](./Assets/visual.png)
 2. Visualisasi dengan pie chart untuk mengetahui jumlah distribusi kelas
 ![](./Assets/visual2.png)
+
 Gambar tersebut memberikan informasi bahwa terdapat 78% pasien normal, 14% pasien suspect, dan 8% pasien pathological.
 
 
@@ -229,6 +231,7 @@ print(f"Akurasi Data Training = {accuracy_score(y_train, dtc.predict(x_train))}"
 print(f"Akurasi Data Testing = {dtc_acc} \n")
 ```
 ![](./Assets/accuracy.png)
+
 dari output yang ada, akurasi dari training mencapai nilai 92% dan akurasi data testing sebanyak 90%. 
 
 Saya Mencoba pengetesan menggunakan data yang ada dumy untuk memeriksa apakah outputnya bisa muncul atau tidak.
@@ -302,15 +305,15 @@ Dari Hasil Classification Report yang disajikan, kita mendapatkan sejumlah metri
 
 1. Precision: Ini adalah tingkat keakuratan prediksi positif. Precision mengukur seberapa banyak dari prediksi positif yang benar. Dalam kasus ini:
    
-- Untuk kelas 1.0, presisi adalah 0.92, yang berarti sekitar 92% dari prediksi kelas 1.0 benar.
-- Untuk kelas 2.0, presisi adalah 0.73, yang berarti sekitar 73% dari prediksi kelas 2.0 benar.
-- Untuk kelas 3.0, presisi adalah 0.95, yang berarti sekitar 95% dari prediksi kelas 3.0 benar.
+   - Untuk kelas 1.0, presisi adalah 0.92, yang berarti sekitar 92% dari prediksi kelas 1.0 benar.
+   - Untuk kelas 2.0, presisi adalah 0.73, yang berarti sekitar 73% dari prediksi kelas 2.0 benar.
+   - Untuk kelas 3.0, presisi adalah 0.95, yang berarti sekitar 95% dari prediksi kelas 3.0 benar.
 
 2. Recall (Sensitivitas): Recall mengukur seberapa banyak dari instance positif yang berhasil ditemukan oleh model. Dalam kasus ini:
    
-- Untuk kelas 1.0, recall adalah 0.96, yang berarti model dapat menemukan sekitar 96% dari instance yang sebenarnya kelas 1.0.
-- Untuk kelas 2.0, recall adalah 0.62, yang berarti model dapat menemukan sekitar 62% dari instance yang sebenarnya kelas 2.0.
-- Untuk kelas 3.0, recall adalah 0.83, yang berarti model dapat menemukan sekitar 83% dari instance yang sebenarnya kelas 3.0.
+   - Untuk kelas 1.0, recall adalah 0.96, yang berarti model dapat menemukan sekitar 96% dari instance yang sebenarnya kelas 1.0.
+   - Untuk kelas 2.0, recall adalah 0.62, yang berarti model dapat menemukan sekitar 62% dari instance yang sebenarnya kelas 2.0.
+   - Untuk kelas 3.0, recall adalah 0.83, yang berarti model dapat menemukan sekitar 83% dari instance yang sebenarnya kelas 3.0.
 
 3. F1-Score: F1-score adalah pengukuran gabungan dari presisi dan recall. Ini memberikan bobot yang seimbang antara kedua metrik tersebut dan berguna ketika ada trade-off antara presisi dan recall. Dalam kasus ini, F1-score dihitung untuk setiap kelas.
 
